@@ -15,8 +15,8 @@ const Footer = () => {
   ]
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/tonidobrinski', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/toni-dobrinski-187819242/', label: 'LinkedIn' },
   ]
 
   const scrollToSection = (href: string) => {

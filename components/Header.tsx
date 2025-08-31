@@ -160,10 +160,10 @@ const scrollToSection = (href: string, isMobile = false) => {
                   </motion.button>
                 ))}
                 <div className="flex items-center space-x-3 pt-4 border-t border-gray-200 dark:border-dark-700">
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-gray-100 dark:bg-dark-800">
+                  <a href="https://github.com/tonidobrinski" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-gray-100 dark:bg-dark-800">
                     <Github className="w-5 h-5" />
                   </a>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-gray-100 dark:bg-dark-800">
+                  <a href="https://www.linkedin.com/in/toni-dobrinski-187819242/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-gray-100 dark:bg-dark-800">
                     <Linkedin className="w-5 h-5" />
                   </a>
                 </div>

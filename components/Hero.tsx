@@ -109,14 +109,14 @@ const Hero = () => {
           >
             <motion.a
               whileHover={{ scale: 1.1, y: -2 }}
-              href="https://github.com" target="_blank" rel="noopener noreferrer"
+              href="https://github.com/tonidobrinski" target="_blank" rel="noopener noreferrer"
               className="p-3 rounded-full bg-white dark:bg-dark-800 shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <Github className="w-6 h-6" />
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.1, y: -2 }}
-              href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/toni-dobrinski-187819242/" target="_blank" rel="noopener noreferrer"
               className="p-3 rounded-full bg-white dark:bg-dark-800 shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <Linkedin className="w-6 h-6" />
