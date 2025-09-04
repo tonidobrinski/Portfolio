@@ -19,10 +19,10 @@ const Projects = () => {
     {
       id: 1,
       title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce platform built with React.js, featuring user authentication, customer reviews & ratings, and admin dashboard.',
+      description: 'A role based full-stack e-commerce platform built with React.js, featuring user authentication, customer reviews & ratings, product management and admin dashboard.',
       image: '/api/placeholder/600/400',
       category: 'web',
-      technologies: ['React.js', 'Node.js', 'MySQL'],
+      technologies: ['React', 'Node.js', 'Express.js' ,'MySQL'],
       liveUrl: 'https://example.com',
       githubUrl: 'https://github.com',
       featured: true
@@ -40,48 +40,81 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Fitness Tracking Mobile App',
-      description: 'A React Native mobile app for tracking workouts, nutrition, and fitness goals with beautiful charts and progress visualization.',
+      title: 'Form Validation App',
+      description: 'A multi-step registration and authentication app featuring live validation with Zod, session-persisted form state, avatar upload preview, and protected routing—all styled with Chakra UI and SCSS.',
       image: '/api/placeholder/600/400',
       category: 'mobile',
-      technologies: ['React Native', 'Expo', 'Firebase', 'Chart.js'],
+      technologies: ['React', 'TypeScript', 'SASS', 'Chakra UI'],
       liveUrl: 'https://example.com',
       githubUrl: 'https://github.com',
       featured: false
     },
     {
       id: 4,
-      title: 'Portfolio Website Design',
-      description: 'Modern and responsive portfolio website design with smooth animations and interactive elements.',
+      title: 'Portfolio Website App',
+      description: 'A modern and responsive portfolio website showcasing projects and skills with smooth animations and interactive elements.',
       image: '/api/placeholder/600/400',
-      category: 'design',
-      technologies: ['Figma', 'Adobe XD', 'Prototyping'],
+      category: 'mobile',
+      technologies: ['Next.js', 'Tailwind CSS', 'Figma', 'Framer Motion'],
       liveUrl: 'https://example.com',
       githubUrl: 'https://github.com',
       featured: false
     },
     {
       id: 5,
-      title: 'Weather Dashboard',
-      description: 'Real-time weather dashboard with location-based forecasts, interactive maps, and weather alerts.',
+      title: 'Product List App',
+      description: 'A product listing page styled with CSS, featuring dynamic product cards, filtering & sorting, and a user-friendly interface for e-commerce applications.',
       image: '/api/placeholder/600/400',
       category: 'web',
-      technologies: ['Vue.js', 'OpenWeather API', 'Leaflet.js'],
+      technologies: ['React', 'CSS', 'Bootstrap'],
       liveUrl: 'https://example.com',
       githubUrl: 'https://github.com',
       featured: false
     },
     {
       id: 6,
-      title: 'Social Media Dashboard',
-      description: 'Analytics dashboard for social media management with data visualization and reporting tools.',
+      title: 'Expenses Manager App',
+      description: 'A modern and responsive expenses manager app featuring intuitive UI/UX, interactive elements, and seamless expense tracking.',
       image: '/api/placeholder/600/400',
       category: 'web',
-      technologies: ['React', 'D3.js', 'Express.js', 'MySQL'],
+      technologies: ['React', 'CSS', 'Figma'],
       liveUrl: 'https://example.com',
       githubUrl: 'https://github.com',
       featured: false
-    }
+    },
+    {
+      id: 7,
+      title: 'Color Block Manager App',
+      description: 'A React app that lets users create persons and assign customizable color blocks, with dynamic color selection loaded via a JSON API.',
+      image: '/api/placeholder/600/400',
+      category: 'web',
+      technologies: ['React', 'TypeScript', 'SASS', 'Material UI'],
+      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com',
+      featured: false
+    },
+    {
+      id: 8,
+      title: 'Shopping Cart App',
+      description: 'A shopping cart app with Redux for state management, featuring dynamic item counts, add/remove functionality, and a live cart preview.',
+      image: '/api/placeholder/600/400',
+      category: 'web',
+      technologies: ['React', 'Redux', 'CSS'],
+      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com',
+      featured: false
+    },
+    {
+      id: 9,
+      title: 'Fintech Blog Posts App',
+      description: 'A web app that aggregates and displays fintech-related blog posts, allowing users to browse, read, and filter content by categories or tags.',
+      image: '/api/placeholder/600/400',
+      category: 'web',
+      technologies: ['React', 'TypeScript', 'SASS', "Figma"],
+      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com',
+      featured: false
+    },
   ]
 
     const scrollToSection = (href: string) => {
