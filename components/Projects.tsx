@@ -29,11 +29,11 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
+      title: 'Satellite Network App',
+      description: 'A Next.js-based frontend module for space situational awareness, featuring an interactive world map, telescope management dashboard, and real-time observatory monitoring.',
       image: '/api/placeholder/600/400',
       category: 'web',
-      technologies: ['React', 'Node.js', 'Socket.io', 'PostgreSQL'],
+      technologies: ['Next.js', 'TypeScript', 'SASS', 'Material UI'],
       liveUrl: 'https://example.com',
       githubUrl: 'https://github.com',
       featured: true
