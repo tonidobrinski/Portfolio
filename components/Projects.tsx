@@ -11,7 +11,7 @@ const Projects = () => {
   const filters = [
     { id: 'all', label: 'All Projects' },
     { id: 'web', label: 'Web Apps' },
-    { id: 'mobile', label: 'Mobile Apps' },
+    { id: 'mobile', label: 'Mobile Responsive Apps' },
     { id: 'design', label: 'UI/UX Design' },
   ]
 
@@ -19,10 +19,10 @@ const Projects = () => {
     {
       id: 1,
       title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce platform built with Next.js, featuring user authentication, payment processing, and admin dashboard.',
+      description: 'A full-stack e-commerce platform built with React.js, featuring user authentication, customer reviews & ratings, and admin dashboard.',
       image: '/api/placeholder/600/400',
       category: 'web',
-      technologies: ['Next.js', 'TypeScript', 'Stripe', 'MongoDB'],
+      technologies: ['React.js', 'Node.js', 'MySQL'],
       liveUrl: 'https://example.com',
       githubUrl: 'https://github.com',
       featured: true
@@ -111,7 +111,7 @@ const Projects = () => {
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             A showcase of my recent work, demonstrating my skills in web development, 
-            mobile apps, and UI/UX design.
+            mobile responsive apps, and UI/UX design.
           </p>
         </motion.div>
 
