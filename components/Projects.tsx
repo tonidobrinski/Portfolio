@@ -45,7 +45,7 @@ const Projects = () => {
       image: '/images/formValidation.jpg',
       category: 'mobile',
       technologies: ['React', 'TypeScript', 'SASS', 'Chakra UI'],
-      liveUrl: 'https://example.com',
+      liveUrl: 'https://tonisformvalidation.netlify.app/',
       githubUrl: 'https://github.com/tonidobrinski/form-validation',
       featured: false
     },
@@ -78,7 +78,7 @@ const Projects = () => {
       image: '/images/expenseManagement.webp',
       category: 'web',
       technologies: ['React', 'CSS', 'Figma'],
-      liveUrl: 'https://example.com',
+      liveUrl: 'https://expenses-manager-application.netlify.app/',
       githubUrl: 'https://github.com/tonidobrinski/Expenses-Manager-App',
       featured: false
     },
