@@ -32,7 +32,7 @@ module.exports = {
           700: '#334155',
           800: '#1e293b',
           900: '#0f172a',
-        }
+        },
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
@@ -40,6 +40,12 @@ module.exports = {
         'slide-down': 'slideDown 0.5s ease-out',
         'bounce-slow': 'bounce 2s infinite',
         'float': 'float 6s ease-in-out infinite',
+
+        // This is for the typewriter animation
+        // -----------------------------------------
+        typing: 'typing 3s steps(30, end) forwards',
+        blink: 'blink 0.8s step-end infinite',
+        // -----------------------------------------
       },
       keyframes: {
         fadeIn: {
@@ -58,6 +64,18 @@ module.exports = {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-20px)' },
         },
+
+        // This is for the typewriter animation
+        // -----------------------------------------
+        typing: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        },
+        blink: {
+          '0%, 100%': { borderColor: 'transparent' },
+          '50%': { borderColor: '#9333ea' },
+        },
+        // -----------------------------------------
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -66,4 +84,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

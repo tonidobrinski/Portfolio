@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ChevronDown, Download, ArrowRight, Github, Linkedin } from 'lucide-react'
+import Typewriter from './Typewriter'
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -40,7 +41,7 @@ const Hero = () => {
             className="mb-6"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-sm font-medium">
-              👋 Hello, I'm Toni Dobrinski
+              <Typewriter/>
             </span>
           </motion.div>
 
