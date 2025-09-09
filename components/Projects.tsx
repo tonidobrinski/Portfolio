@@ -24,7 +24,7 @@ const Projects = () => {
       category: 'web',
       technologies: ['React', 'Node.js', 'Express.js' ,'MySQL'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/tonidobrinski/My3dWorld',
       featured: true
     },
     {
@@ -35,7 +35,7 @@ const Projects = () => {
       category: 'web',
       technologies: ['Next.js', 'TypeScript', 'SASS', 'Material UI'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/tonidobrinski/sensor-network',
       featured: true
     },
     {
@@ -46,7 +46,7 @@ const Projects = () => {
       category: 'mobile',
       technologies: ['React', 'TypeScript', 'SASS', 'Chakra UI'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/tonidobrinski/form-validation',
       featured: false
     },
     {
@@ -57,7 +57,7 @@ const Projects = () => {
       category: 'mobile',
       technologies: ['Next.js', 'Tailwind CSS', 'Figma', 'Framer Motion'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/tonidobrinski/Portfolio',
       featured: false
     },
     {
@@ -68,7 +68,7 @@ const Projects = () => {
       category: 'web',
       technologies: ['React', 'CSS', 'Bootstrap'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/tonidobrinski/product-list-page',
       featured: false
     },
     {
@@ -79,7 +79,7 @@ const Projects = () => {
       category: 'web',
       technologies: ['React', 'CSS', 'Figma'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/tonidobrinski/Expenses-Manager-App',
       featured: false
     },
     {
@@ -90,7 +90,7 @@ const Projects = () => {
       category: 'web',
       technologies: ['React', 'TypeScript', 'SASS', 'Material UI'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/tonidobrinski/color-block-manager',
       featured: false
     },
     {
@@ -101,7 +101,7 @@ const Projects = () => {
       category: 'web',
       technologies: ['React', 'Redux', 'CSS'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/tonidobrinski/Shopping-Cart',
       featured: false
     },
     {
