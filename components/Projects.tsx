@@ -20,7 +20,7 @@ const Projects = () => {
       id: 1,
       title: 'E-Commerce Platform',
       description: 'A role based full-stack e-commerce platform built with React.js, featuring user authentication, customer reviews & ratings, product management and admin dashboard.',
-      image: '/api/placeholder/600/400',
+      image: '/images/e-commerce.webp',
       category: 'web',
       technologies: ['React', 'Node.js', 'Express.js' ,'MySQL'],
       liveUrl: 'https://example.com',
@@ -31,7 +31,7 @@ const Projects = () => {
       id: 2,
       title: 'Satellite Network App',
       description: 'A Next.js-based frontend module for space situational awareness, featuring an interactive world map, telescope management dashboard, and real-time observatory monitoring.',
-      image: '/api/placeholder/600/400',
+      image: '/images/satelliteNetwork.jpg',
       category: 'web',
       technologies: ['Next.js', 'TypeScript', 'SASS', 'Material UI'],
       liveUrl: 'https://example.com',
@@ -42,7 +42,7 @@ const Projects = () => {
       id: 3,
       title: 'Form Validation App',
       description: 'A multi-step registration and authentication app featuring live validation with Zod, session-persisted form state, avatar upload preview, and protected routing—all styled with Chakra UI and SCSS.',
-      image: '/api/placeholder/600/400',
+      image: '/images/formValidation.jpg',
       category: 'mobile',
       technologies: ['React', 'TypeScript', 'SASS', 'Chakra UI'],
       liveUrl: 'https://example.com',
@@ -53,7 +53,7 @@ const Projects = () => {
       id: 4,
       title: 'Portfolio Website App',
       description: 'A modern and responsive portfolio website showcasing projects and skills with smooth animations and interactive elements.',
-      image: '/api/placeholder/600/400',
+      image: '/images/portfolio.jpg',
       category: 'mobile',
       technologies: ['Next.js', 'Tailwind CSS', 'Figma', 'Framer Motion'],
       liveUrl: 'https://example.com',
@@ -64,7 +64,7 @@ const Projects = () => {
       id: 5,
       title: 'Product List App',
       description: 'A product listing page styled with CSS, featuring dynamic product cards, filtering & sorting, and a user-friendly interface for e-commerce applications.',
-      image: '/api/placeholder/600/400',
+      image: '/images/productListing.png',
       category: 'web',
       technologies: ['React', 'CSS', 'Bootstrap'],
       liveUrl: 'https://example.com',
@@ -75,7 +75,7 @@ const Projects = () => {
       id: 6,
       title: 'Expenses Manager App',
       description: 'A modern and responsive expenses manager app featuring intuitive UI/UX, interactive elements, and seamless expense tracking.',
-      image: '/api/placeholder/600/400',
+      image: '/images/expenseManagement.webp',
       category: 'web',
       technologies: ['React', 'CSS', 'Figma'],
       liveUrl: 'https://example.com',
@@ -86,7 +86,7 @@ const Projects = () => {
       id: 7,
       title: 'Color Block Manager App',
       description: 'A React app that lets users create persons and assign customizable color blocks, with dynamic color selection loaded via a JSON API.',
-      image: '/api/placeholder/600/400',
+      image: '/images/colorBlockManager.png',
       category: 'web',
       technologies: ['React', 'TypeScript', 'SASS', 'Material UI'],
       liveUrl: 'https://example.com',
@@ -97,7 +97,7 @@ const Projects = () => {
       id: 8,
       title: 'Shopping Cart App',
       description: 'A shopping cart app with Redux for state management, featuring dynamic item counts, add/remove functionality, and a live cart preview.',
-      image: '/api/placeholder/600/400',
+      image: '/images/shoppingCart.jpg',
       category: 'web',
       technologies: ['React', 'Redux', 'CSS'],
       liveUrl: 'https://example.com',
@@ -108,7 +108,7 @@ const Projects = () => {
       id: 9,
       title: 'Fintech Blog Posts App',
       description: 'A web app that aggregates and displays fintech-related blog posts, allowing users to browse, read, and filter content by categories or tags.',
-      image: '/api/placeholder/600/400',
+      image: '/images/fintech.jpg',
       category: 'web',
       technologies: ['React', 'TypeScript', 'SASS', "Figma"],
       liveUrl: 'https://example.com',
@@ -130,7 +130,10 @@ const Projects = () => {
     : projects.filter(project => project.category === activeFilter)
 
   return (
-    <section id="projects" className="section-padding bg-gray-50 dark:bg-dark-800/50">
+    <section
+      id="projects"
+      className="section-padding bg-gray-50 dark:bg-dark-800/50"
+    >
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -143,8 +146,8 @@ const Projects = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            A showcase of my recent work, demonstrating my skills in web development, 
-            mobile responsive apps, and UI/UX design.
+            A showcase of my recent work, demonstrating my skills in web
+            development, mobile responsive apps, and UI/UX design.
           </p>
         </motion.div>
 
@@ -164,8 +167,8 @@ const Projects = () => {
               onClick={() => setActiveFilter(filter.id)}
               className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                 activeFilter === filter.id
-                  ? 'bg-primary-500 text-white shadow-lg'
-                  : 'bg-white dark:bg-dark-700 text-gray-700 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-primary-900/20'
+                  ? "bg-primary-500 text-white shadow-lg"
+                  : "bg-white dark:bg-dark-700 text-gray-700 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-primary-900/20"
               }`}
             >
               {filter.label}
@@ -194,14 +197,12 @@ const Projects = () => {
                 <div className="bg-white dark:bg-dark-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 card-hover">
                   {/* Project Image */}
                   <div className="relative overflow-hidden">
-                    <div className="w-full h-48 bg-gradient-to-br from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 flex items-center justify-center">
-                      <div className="text-6xl opacity-20">
-                        {project.category === 'web' && <Globe />}
-                        {project.category === 'mobile' && <Code />}
-                        {project.category === 'design' && <Palette />}
-                      </div>
-                    </div>
-                    
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-48 object-cover rounded-t-2xl"
+                    />
+
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                       <motion.a
@@ -244,7 +245,7 @@ const Projects = () => {
                     <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed">
                       {project.description}
                     </p>
-                    
+
                     {/* Technologies */}
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.technologies.map((tech) => (
@@ -303,7 +304,7 @@ const Projects = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => scrollToSection('#contact'	)}
+            onClick={() => scrollToSection("#contact")}
             className="px-8 py-4 bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300"
           >
             Get In Touch
@@ -311,7 +312,7 @@ const Projects = () => {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Projects
