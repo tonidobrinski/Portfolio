@@ -65,7 +65,8 @@ portfolio/
 │   ├── Skills.tsx           # Skills section
 │   ├── Projects.tsx         # Projects showcase
 │   ├── Contact.tsx          # Contact form
-│   └── Footer.tsx           # Footer component
+│   ├── Footer.tsx           # Footer component
+│   └── Typewriter.tsx       # Typewriter animation
 ├── public/                  # Static assets (images, fonts, etc.)
 │   └── cv/                  # CV and resume files
 │       └── Toni_Dobrinski_CV.pdf
