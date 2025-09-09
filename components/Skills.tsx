@@ -46,8 +46,8 @@ const Skills = () => {
       icon: Palette,
       title: 'Design & Styling',
       skills: [
-        { name: 'Tailwind CSS', level: 90 },
-        { name: 'CSS3/SASS', level: 85 },
+        { name: 'CSS3/SASS', level: 95 },
+        { name: 'Tailwind CSS', level: 80 },
         { name: 'Figma', level: 75 },
         { name: 'Responsive Design', level: 92 },
         { name: 'UI/UX Principles', level: 80 },
