@@ -69,7 +69,7 @@ portfolio/
 │   └── Typewriter.tsx       # Typewriter animation
 ├── public/                  # Static assets (images, fonts, etc.)
 │   └── cv/                  # CV and resume files
-│       └── Toni_Dobrinski_CV.pdf
+│       └── CV_Toni_Dobrinski.pdf
 ├── package.json             # Dependencies and scripts
 ├── tailwind.config.js       # Tailwind configuration
 ├── tsconfig.json           # TypeScript configuration
