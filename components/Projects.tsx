@@ -89,7 +89,7 @@ const Projects = () => {
       image: '/images/colorBlockManager.png',
       category: 'web',
       technologies: ['React', 'TypeScript', 'SASS', 'Material UI'],
-      liveUrl: 'https://example.com',
+      liveUrl: 'https://color-block-manager.netlify.app/',
       githubUrl: 'https://github.com/tonidobrinski/color-block-manager',
       featured: false
     },
