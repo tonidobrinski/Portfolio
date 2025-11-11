@@ -100,7 +100,7 @@ const Projects = () => {
       image: '/images/shoppingCart.jpg',
       category: 'web',
       technologies: ['React', 'Redux', 'CSS'],
-      liveUrl: 'https://example.com',
+      liveUrl: 'https://toni-shopping-cart-project.netlify.app/',
       githubUrl: 'https://github.com/tonidobrinski/Shopping-Cart',
       featured: false
     },
