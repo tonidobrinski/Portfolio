@@ -67,7 +67,7 @@ const Projects = () => {
       image: '/images/productListing.png',
       category: 'web',
       technologies: ['React', 'CSS', 'Bootstrap'],
-      liveUrl: 'https://example.com',
+      liveUrl: 'https://product-list-page-application.netlify.app/',
       githubUrl: 'https://github.com/tonidobrinski/product-list-page',
       featured: false
     },
