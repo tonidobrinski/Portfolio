@@ -34,7 +34,7 @@ const Projects = () => {
       image: '/images/satelliteNetwork.jpg',
       category: 'web',
       technologies: ['Next.js', 'TypeScript', 'SASS', 'Material UI'],
-      liveUrl: 'https://example.com',
+      liveUrl: 'https://sensor-network-9ovl.vercel.app/',
       githubUrl: 'https://github.com/tonidobrinski/sensor-network',
       featured: true
     },
