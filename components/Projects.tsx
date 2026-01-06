@@ -1,133 +1,142 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { ExternalLink, Github, Eye, Code, Palette, Globe } from 'lucide-react'
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ExternalLink, Github, Eye, Code, Palette, Globe } from "lucide-react";
 
 const Projects = () => {
-  const [activeFilter, setActiveFilter] = useState('all')
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [activeFilter, setActiveFilter] = useState("all");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const filters = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'web', label: 'Web Apps' },
-    { id: 'mobile', label: 'Mobile Responsive Apps' },
-    { id: 'design', label: 'UI/UX Design' },
-  ]
+    { id: "all", label: "All Projects" },
+    { id: "web", label: "Web Apps" },
+    { id: "mobile", label: "Mobile Responsive Apps" },
+  ];
 
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A role based full-stack e-commerce platform built with React.js, featuring user authentication, customer reviews & ratings, product management and admin dashboard.',
-      image: '/images/e-commerce.webp',
-      category: 'web',
-      technologies: ['React', 'Node.js', 'Express.js' ,'MySQL'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/tonidobrinski/My3dWorld',
-      featured: true
+      title: "E-Commerce Platform",
+      description:
+        "A role based full-stack e-commerce platform built with React.js, featuring user authentication, customer reviews & ratings, product management and admin dashboard.",
+      image: "/images/e-commerce.webp",
+      category: "web",
+      technologies: ["React", "Node.js", "Express.js", "MySQL"],
+      // liveUrl: "https://example.com",
+      githubUrl: "https://github.com/tonidobrinski/My3dWorld",
+      featured: true,
     },
     {
       id: 2,
-      title: 'Satellite Network App',
-      description: 'A Next.js-based frontend module for space situational awareness, featuring an interactive world map, telescope management dashboard, and real-time observatory monitoring.',
-      image: '/images/satelliteNetwork.jpg',
-      category: 'web',
-      technologies: ['Next.js', 'TypeScript', 'SASS', 'Material UI'],
-      liveUrl: 'https://sensor-network-9ovl.vercel.app/',
-      githubUrl: 'https://github.com/tonidobrinski/sensor-network',
-      featured: true
+      title: "Satellite Network App",
+      description:
+        "A Next.js-based frontend module for space situational awareness, featuring an interactive world map, telescope management dashboard, and real-time observatory monitoring.",
+      image: "/images/satelliteNetwork.jpg",
+      category: "web",
+      technologies: ["Next.js", "TypeScript", "SASS", "Material UI"],
+      liveUrl: "https://sensor-network-9ovl.vercel.app/",
+      githubUrl: "https://github.com/tonidobrinski/sensor-network",
+      featured: true,
     },
     {
       id: 3,
-      title: 'Form Validation App',
-      description: 'A multi-step registration and authentication app featuring live validation with Zod, session-persisted form state, avatar upload preview, and protected routing—all styled with Chakra UI and SCSS.',
-      image: '/images/formValidation.jpg',
-      category: 'mobile',
-      technologies: ['React', 'TypeScript', 'SASS', 'Chakra UI'],
-      liveUrl: 'https://tonisformvalidation.netlify.app/',
-      githubUrl: 'https://github.com/tonidobrinski/form-validation',
-      featured: false
+      title: "Form Validation App",
+      description:
+        "A multi-step registration and authentication app featuring live validation with Zod, session-persisted form state, avatar upload preview, and protected routing—all styled with Chakra UI and SCSS.",
+      image: "/images/formValidation.jpg",
+      category: "mobile",
+      technologies: ["React", "TypeScript", "SASS", "Chakra UI"],
+      liveUrl: "https://tonisformvalidation.netlify.app/",
+      githubUrl: "https://github.com/tonidobrinski/form-validation",
+      featured: true,
     },
     {
       id: 4,
-      title: 'Portfolio Website App',
-      description: 'A modern and responsive portfolio website showcasing projects and skills with smooth animations and interactive elements.',
-      image: '/images/portfolio.jpg',
-      category: 'mobile',
-      technologies: ['Next.js', 'Tailwind CSS', 'Figma', 'Framer Motion'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/tonidobrinski/Portfolio',
-      featured: false
+      title: "Portfolio Website App",
+      description:
+        "A modern and responsive portfolio website showcasing projects and skills with smooth animations and interactive elements.",
+      image: "/images/portfolio.jpg",
+      category: "mobile",
+      technologies: ["Next.js", "Tailwind CSS", "Figma", "Framer Motion"],
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/tonidobrinski/Portfolio",
+      featured: false,
     },
     {
       id: 5,
-      title: 'Product List App',
-      description: 'A product listing page styled with CSS, featuring dynamic product cards, filtering & sorting, and a user-friendly interface for e-commerce applications.',
-      image: '/images/productListing.png',
-      category: 'web',
-      technologies: ['React', 'CSS', 'Bootstrap'],
-      liveUrl: 'https://product-list-page-application.netlify.app/',
-      githubUrl: 'https://github.com/tonidobrinski/product-list-page',
-      featured: false
+      title: "Product List App",
+      description:
+        "A product listing page styled with CSS, featuring dynamic product cards, filtering & sorting, and a user-friendly interface for e-commerce applications.",
+      image: "/images/productListing.png",
+      category: "web",
+      technologies: ["React", "CSS", "Bootstrap"],
+      liveUrl: "https://product-list-page-application.netlify.app/",
+      githubUrl: "https://github.com/tonidobrinski/product-list-page",
+      featured: false,
     },
     {
       id: 6,
-      title: 'Expenses Manager App',
-      description: 'A modern and responsive expenses manager app featuring intuitive UI/UX, interactive elements, and seamless expense tracking.',
-      image: '/images/expenseManagement.webp',
-      category: 'web',
-      technologies: ['React', 'CSS', 'Figma'],
-      liveUrl: 'https://expenses-manager-application.netlify.app/',
-      githubUrl: 'https://github.com/tonidobrinski/Expenses-Manager-App',
-      featured: false
+      title: "Expenses Manager App",
+      description:
+        "A modern and responsive expenses manager app featuring intuitive UI/UX, interactive elements, and seamless expense tracking.",
+      image: "/images/expenseManagement.webp",
+      category: "web",
+      technologies: ["React", "CSS", "Figma"],
+      liveUrl: "https://expenses-manager-application.netlify.app/",
+      githubUrl: "https://github.com/tonidobrinski/Expenses-Manager-App",
+      featured: false,
     },
     {
       id: 7,
-      title: 'Color Block Manager App',
-      description: 'A React app that lets users create persons and assign customizable color blocks, with dynamic color selection loaded via a JSON API.',
-      image: '/images/colorBlockManager.png',
-      category: 'web',
-      technologies: ['React', 'TypeScript', 'SASS', 'Material UI'],
-      liveUrl: 'https://color-block-manager.netlify.app/',
-      githubUrl: 'https://github.com/tonidobrinski/color-block-manager',
-      featured: false
+      title: "Color Block Manager App",
+      description:
+        "A React app that lets users create persons and assign customizable color blocks, with dynamic color selection loaded via a JSON API.",
+      image: "/images/colorBlockManager.png",
+      category: "web",
+      technologies: ["React", "TypeScript", "SASS", "Material UI"],
+      liveUrl: "https://color-block-manager.netlify.app/",
+      githubUrl: "https://github.com/tonidobrinski/color-block-manager",
+      featured: false,
     },
     {
       id: 8,
-      title: 'Shopping Cart App',
-      description: 'A shopping cart app with Redux for state management, featuring dynamic item counts, add/remove functionality, and a live cart preview.',
-      image: '/images/shoppingCart.jpg',
-      category: 'web',
-      technologies: ['React', 'Redux', 'CSS'],
-      liveUrl: 'https://toni-shopping-cart-project.netlify.app/',
-      githubUrl: 'https://github.com/tonidobrinski/Shopping-Cart',
-      featured: false
+      title: "Shopping Cart App",
+      description:
+        "A shopping cart app with Redux for state management, featuring dynamic item counts, add/remove functionality, and a live cart preview.",
+      image: "/images/shoppingCart.jpg",
+      category: "web",
+      technologies: ["React", "Redux", "CSS"],
+      liveUrl: "https://toni-shopping-cart-project.netlify.app/",
+      githubUrl: "https://github.com/tonidobrinski/Shopping-Cart",
+      featured: false,
     },
     {
       id: 9,
-      title: 'Fintech Blog Posts App',
-      description: 'A web app that aggregates and displays fintech-related blog posts, allowing users to browse, read, and filter content by categories or tags.',
-      image: '/images/fintech.jpg',
-      category: 'web',
-      technologies: ['React', 'TypeScript', 'SASS', "Figma"],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
-      featured: false
+      title: "Fintech Blog Posts App",
+      description:
+        "A web app that aggregates and displays fintech-related blog posts, allowing users to browse, read, and filter content by categories or tags.",
+      image: "/images/fintech.jpg",
+      category: "web",
+      technologies: ["React", "TypeScript", "SASS", "Figma"],
+      // liveUrl: "https://example.com",
+      githubUrl: "https://github.com",
+      featured: false,
     },
-  ]
+  ];
 
-    const scrollToSection = (href: string) => {
-    const element = document.querySelector(href)
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-    setIsMenuOpen(false)
-  }
+    setIsMenuOpen(false);
+  };
 
-  const filteredProjects = activeFilter === 'all' 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter)
+  const filteredProjects =
+    activeFilter === "all"
+      ? projects
+      : projects.filter((project) => project.category === activeFilter);
 
   return (
     <section
@@ -192,9 +201,9 @@ const Projects = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group"
+                className="group h-full"
               >
-                <div className="bg-white dark:bg-dark-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 card-hover">
+                <div className="bg-white dark:bg-dark-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 card-hover h-full flex flex-col">
                   {/* Project Image */}
                   <div className="relative overflow-hidden">
                     <img
@@ -238,7 +247,7 @@ const Projects = () => {
                   </div>
 
                   {/* Project Content */}
-                  <div className="p-6">
+                  <div className="p-6 flex-1 flex flex-col">
                     <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3 group-hover:text-primary-500 transition-colors duration-300">
                       {project.title}
                     </h3>
@@ -259,18 +268,21 @@ const Projects = () => {
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="flex gap-3">
-                      <motion.a
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-primary-500 text-white rounded-lg text-sm font-medium hover:bg-primary-600 transition-colors duration-300"
-                      >
-                        <Eye className="w-4 h-4" />
-                        Live Demo
-                      </motion.a>
+                    <div className="flex gap-3 mt-auto">
+                      {project.liveUrl && (
+                        <motion.a
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-primary-500 text-white rounded-lg text-sm font-medium hover:bg-primary-600 transition-colors duration-300"
+                        >
+                          <Eye className="w-4 h-4" />
+                          Live Demo
+                        </motion.a>
+                      )}
+
                       <motion.a
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
@@ -313,6 +325,6 @@ const Projects = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Projects
+export default Projects;
