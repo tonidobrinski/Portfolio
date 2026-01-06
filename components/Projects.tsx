@@ -59,7 +59,7 @@ const Projects = () => {
       image: "/images/portfolio.jpg",
       category: "mobile",
       technologies: ["Next.js", "Tailwind CSS", "Figma", "Framer Motion"],
-      liveUrl: "https://example.com",
+      liveUrl: "https://tonidobrinskiportfolio.vercel.app",
       githubUrl: "https://github.com/tonidobrinski/Portfolio",
       featured: false,
     },
