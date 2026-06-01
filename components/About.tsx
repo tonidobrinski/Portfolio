@@ -1,39 +1,53 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { Calendar, MapPin, Mail, Phone, Award, Users, Code, Coffee } from 'lucide-react'
+import { motion } from "framer-motion";
+import {
+  Calendar,
+  MapPin,
+  Mail,
+  Phone,
+  Award,
+  Users,
+  Code,
+  Coffee,
+} from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: Code, value: '20+', label: 'Projects Completed' },
-    { icon: Users, value: '10+', label: 'Happy Clients' },
-    { icon: Award, value: '3+', label: 'Years Experience' },
-    { icon: Coffee, value: '1000+', label: 'Cups of Coffee' },
-  ]
+    { icon: Code, value: "20+", label: "Projects Completed" },
+    { icon: Users, value: "10+", label: "Happy Clients" },
+    { icon: Award, value: "3+", label: "Years Experience" },
+    { icon: Coffee, value: "1000+", label: "Cups of Coffee" },
+  ];
 
   const experiences = [
     {
-      year: '2024 - Present',
-      title: 'Frontend Developer',
-      company: 'IBM',
-      description: 'Developing and maintaining web applications using React, Redux, and TypeScript.'
+      year: "2024 - Present",
+      title: "Frontend Developer",
+      company: "IBM",
+      description:
+        "Developing and maintaining web applications using React, Redux, and TypeScript.",
     },
     {
-      year: '2022 - 2024',
-      title: 'Frontend Developer',
-      company: 'Freelance',
-      description: 'Built responsive web applications for clients.'
+      year: "2022 - 2024",
+      title: "Frontend Developer",
+      company: "Freelance",
+      description: "Built responsive web applications for clients.",
     },
     {
-      year: '2021 - Present',
-      title: 'Frontend Developer',
-      company: 'Personal Projects',
-      description: 'Started my journey in web development, learning modern frameworks and best practices.'
+      year: "2021 - Present",
+      title: "Frontend Developer",
+      company: "Personal Projects",
+      description:
+        "Started my journey in web development, learning modern frameworks and best practices.",
     },
-  ]
+  ];
 
   return (
-    <section id="about" className="section-padding bg-gray-50 dark:bg-dark-800/50">
+    <section
+      id="about"
+      className="section-padding bg-gray-50 dark:bg-dark-800/50"
+    >
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -46,7 +60,8 @@ const About = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Passionate frontend developer with a love for creating beautiful, functional, and user-centered digital experiences.
+            Passionate frontend developer with a love for creating beautiful,
+            functional, and user-centered digital experiences.
           </p>
         </motion.div>
 
@@ -60,31 +75,39 @@ const About = () => {
           >
             <h3 className="text-2xl font-bold mb-6">Who I Am</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-              I'm a dedicated frontend developer with over 3 years of experience crafting 
-              exceptional web experiences. My journey in web development started with a 
-              curiosity about how things work on the internet, which evolved into a passion 
-              for creating intuitive and beautiful user interfaces.
+              I'm a dedicated frontend developer with over 3 years of experience
+              crafting exceptional web experiences. My journey in web
+              development started with a curiosity about how things work on the
+              internet, which evolved into a passion for creating intuitive and
+              beautiful user interfaces.
             </p>
             <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-              I believe in writing clean, maintainable code and staying up-to-date with 
-              the latest technologies and best practices. When I'm not coding, you can find 
-              me exploring new technologies, brainstorming ideas for products I'd love to build, or 
-              exploring ways to improve my problem-solving skills.
+              I believe in writing clean, maintainable code and staying
+              up-to-date with the latest technologies and best practices. When
+              I'm not coding, you can find me exploring new technologies,
+              brainstorming ideas for products I'd love to build, or exploring
+              ways to improve my problem-solving skills.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-primary-500" />
-                <span className="text-gray-600 dark:text-gray-400">Plovdiv, Bulgaria</span>
+                <span className="text-gray-600 dark:text-gray-400">
+                  Plovdiv, Bulgaria
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary-500" />
-                <span className="text-gray-600 dark:text-gray-400">druidxdd@gmail.com</span>
+                <span className="text-gray-600 dark:text-gray-400">
+                  druidxdd@gmail.com
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary-500" />
-                <span className="text-gray-600 dark:text-gray-400">+359 884 424 859</span>
+                <span className="text-gray-600 dark:text-gray-400">
+                  +359 884 424 859
+                </span>
               </div>
             </div>
           </motion.div>
@@ -129,7 +152,7 @@ const About = () => {
           <div className="relative">
             {/* Timeline Line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary-500 to-purple-500"></div>
-            
+
             <div className="space-y-12">
               {experiences.map((exp, index) => (
                 <motion.div
@@ -139,14 +162,16 @@ const About = () => {
                   transition={{ duration: 0.6, delay: index * 0.2 }}
                   viewport={{ once: true }}
                   className={`relative flex items-center ${
-                    index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+                    index % 2 === 0 ? "flex-row" : "flex-row-reverse"
                   }`}
                 >
                   {/* Timeline Dot */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-white dark:border-dark-800"></div>
-                  
+
                   {/* Content */}
-                  <div className={`w-5/12 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
+                  <div
+                    className={`w-5/12 ${index % 2 === 0 ? "pr-8" : "pl-8"}`}
+                  >
                     <div className="bg-white dark:bg-dark-700 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                       <div className="flex items-center gap-2 mb-2">
                         <Calendar className="w-4 h-4 text-primary-500" />
@@ -172,7 +197,7 @@ const About = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
